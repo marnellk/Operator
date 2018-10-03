@@ -11,12 +11,14 @@
 
 
 
-#include <vector>
+//#include <vector>
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
-
+//#include <math.h>
+#include "Operator.h"
+#include "UtilityK.hpp"
 //Moved to header file.
+/*
 class Operator
 {
 public:
@@ -33,10 +35,38 @@ private:
   // member properties
 
   };
-
+*/
 
 int main()
 {
+
+    Operator op("./timeActExt.csv");
+
+    //std::cout << op.fname << std::endl;
+   //         printf("\n Testing.\n");
+
+    //op.dataLength = op.GetDataLength(op.fname);
+
+    //printf("\n\%d",op.dataLength);
+
+    //op.Idle();
+    //op.time =
+    //Operator op;
+
+    //printf("\n\%s",op.fname);
+
+    std::cout << op.fname << std::endl;
+    //std::cout << a << std::endl;
+    op.Loop();
+        //std::cout << op.time << std::endl;
+
+
+
+    //::cin.get();
+    return 0;
+};
+
+/*
         char fname[] = "taction.csv";
         //printf("\n..\n..\n..\n %s \n %d \n..\n..\n..\n", str, &str);
         FILE *csvp;                                 //Creates a pointer to the file.
@@ -92,25 +122,11 @@ printf("\n Test\n.");
             }
 
         printf("\n %d    %c \n %d     %c\n %d    %c \n %d    %c \n %d    %c \n %d    %c \n %d   %c \n %d   %c ", time[10000], action[10000], time[20000],action[20000], time[30000],action[30000], time[40000],action[40000], time[50000],action[50000],  time[60000],action[60000],  time[70000],action[70000], time[80000],action[80000]);
-
-        fclose(csvp);
+     fclose(csvp);
 
 //Close the .csv file.
         //fclose(csvp);
 
     //Input Portion Complete
         printf("\n Data finished parsing.\n");
-
-
-    Operator op;
-    //op.time =
-    //Operator op;
-
-
-    //std::cout << "HELLO WORLD!" << std::endl;
-    //std::cout << a << std::endl;
-
-    //::cin.get();
-    return 0;
-}
-
+*/
